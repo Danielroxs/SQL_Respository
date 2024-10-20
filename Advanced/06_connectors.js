@@ -1,12 +1,21 @@
 const mysql = require('mysql2');
 
 // Configuración de la conexión para servidor local
-const connection = mysql.createConnection({
+/* const connection = mysql.createConnection({
     host: '127.0.0.1',  // Servidor local
     port: '3306',  // Puerto predeterminado de MySQL
     user: 'root',  // Usuario root de MySQL
     password: 'root1234',  // Contraseña del usuario root (ajusta si es diferente)
     database: 'hello_mysql'  // Nombre de la base de datos
+}); */
+
+// BD en servidor
+const connection = mysql.createConnection({
+    host: 'bnb6le6zshxvcslmjfdv-mysql.services.clever-cloud.com',  // Servidor local
+    port: '3306',  // Puerto predeterminado de MySQL
+    user: 'ukgqycn93esenblm',  // Usuario root de MySQL
+    password: '1kYntrNGrt9wTYEqZb4Q',  // Contraseña del usuario root (ajusta si es diferente)
+    database: 'bnb6le6zshxvcslmjfdv'  // Nombre de la base de datos
 });
 
 // Conectar a la base de datos
